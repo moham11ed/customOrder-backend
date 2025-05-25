@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JV8SYnsIUVc=",
+  "dgSpecHash": "E9BxLIe8/Cc=",
   "success": true,
-  "projectFilePath": "E:\\freelance project2\\customOrder\\customOrder.csproj",
+  "projectFilePath": "E:\\customOrder\\customOrder-backend\\customOrder.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\saied\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\saied\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

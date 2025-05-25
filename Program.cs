@@ -19,7 +19,20 @@ namespace customOrder
 
             // Register services
             builder.Services.AddScoped<ISubscriptionService, SubscriptionService>();
-            builder.Services.AddScoped<IOrderService, OrderService>(); // Add this line
+            builder.Services.AddScoped<IOrderService, OrderService>();
+
+            // Add CORS policy
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAngularApp",
+                    policy =>
+                    {
+                        policy.WithOrigins("http://localhost:4200") // أو أي عنوان آخر لتطبيقك
+                              .AllowAnyMethod()
+                              .AllowAnyHeader()
+                              .AllowCredentials();
+                    });
+            });
 
             // Add Swagger/OpenAPI
             builder.Services.AddEndpointsApiExplorer();
@@ -35,6 +48,10 @@ namespace customOrder
             }
 
             app.UseHttpsRedirection();
+
+            // Enable CORS middleware - يجب أن يكون قبل UseAuthorization و MapControllers
+            app.UseCors("AllowAngularApp");
+
             app.UseAuthorization();
             app.MapControllers();
 

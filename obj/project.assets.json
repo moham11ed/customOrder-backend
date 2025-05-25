@@ -5208,11 +5208,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\freelance project2\\customOrder\\customOrder.csproj",
+      "projectUniqueName": "E:\\customOrder\\customOrder-backend\\customOrder.csproj",
       "projectName": "customOrder",
-      "projectPath": "E:\\freelance project2\\customOrder\\customOrder.csproj",
+      "projectPath": "E:\\customOrder\\customOrder-backend\\customOrder.csproj",
       "packagesPath": "C:\\Users\\saied\\.nuget\\packages\\",
-      "outputPath": "E:\\freelance project2\\customOrder\\obj\\",
+      "outputPath": "E:\\customOrder\\customOrder-backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
