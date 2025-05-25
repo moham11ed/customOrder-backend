@@ -74,6 +74,28 @@ namespace customOrder.Controllers
             }
         }
 
+        [HttpGet("{id}/status")]
+        public async Task<IActionResult> GetOrderStatus(int id)
+        {
+            try
+            {
+                var status = await _orderService.GetOrderStatusAsync(id);
+
+                if (status == null)
+                {
+                    return NotFound($"Order with ID {id} not found");
+                }
+
+                return Ok(new { Status = status });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error retrieving status for order {OrderId}", id);
+                return StatusCode(500, "Error retrieving order status");
+            }
+        }
+
+
         [HttpGet("by-email/{email}")]
         public async Task<IActionResult> GetOrdersByEmail(string email)
         {

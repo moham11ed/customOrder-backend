@@ -12,5 +12,6 @@ namespace customOrder.Service
         Task<IEnumerable<Order>> GetOrdersByEmailAsync(string email);
         Task<bool> UpdateOrderStatusAsync(int orderId, string status);
         Task<IEnumerable<Order>> GetAllOrdersAsync();
+        Task<string> GetOrderStatusAsync(int orderId);
     }
 }

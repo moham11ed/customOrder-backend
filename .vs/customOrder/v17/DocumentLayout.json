@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\customOrder\\customOrder-backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\customorder-backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\customorder-backend\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|solutionrelative:models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\customorder-backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\customorder-backend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\customorder-backend\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,40 +23,16 @@
       "RelativeMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|solutionrelative:service\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\customorder-backend\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\customorder-backend\\dto\\orderdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|solutionrelative:dto\\orderdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\customorder-backend\\controllers\\subscriptionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|solutionrelative:controllers\\subscriptionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\customorder-backend\\service\\subscriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|solutionrelative:service\\subscriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\customorder-backend\\service\\isubscriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|solutionrelative:service\\isubscriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\customorder-backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\customorder-backend\\data\\migrations\\20250523163821_updateordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|solutionrelative:data\\migrations\\20250523163821_updateordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\customorder-backend\\controllers\\producttypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|solutionrelative:controllers\\producttypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\customorder-backend\\controllers\\shapewithdesign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|solutionrelative:controllers\\shapewithdesign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\customorder-backend\\data\\migrations\\20250523172535_updateordermodel2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|solutionrelative:data\\migrations\\20250523172535_updateordermodel2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\customorder-backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,31 +42,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "20250523172535_UpdateOrderModel2.cs",
-              "DocumentMoniker": "E:\\customOrder\\customOrder-backend\\Data\\Migrations\\20250523172535_UpdateOrderModel2.cs",
-              "RelativeDocumentMoniker": "Data\\Migrations\\20250523172535_UpdateOrderModel2.cs",
-              "ToolTip": "E:\\customOrder\\customOrder-backend\\Data\\Migrations\\20250523172535_UpdateOrderModel2.cs",
-              "RelativeToolTip": "Data\\Migrations\\20250523172535_UpdateOrderModel2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "E:\\customOrder\\customOrder-backend\\Models\\Admin.cs",
+              "RelativeDocumentMoniker": "Models\\Admin.cs",
+              "ToolTip": "E:\\customOrder\\customOrder-backend\\Models\\Admin.cs",
+              "RelativeToolTip": "Models\\Admin.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T17:25:35.439Z"
+              "WhenOpened": "2025-05-25T17:14:20.248Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IOrderService.cs",
-              "DocumentMoniker": "E:\\customOrder\\customOrder-backend\\Service\\IOrderService.cs",
-              "RelativeDocumentMoniker": "Service\\IOrderService.cs",
-              "ToolTip": "E:\\customOrder\\customOrder-backend\\Service\\IOrderService.cs",
-              "RelativeToolTip": "Service\\IOrderService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "E:\\customOrder\\customOrder-backend\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "E:\\customOrder\\customOrder-backend\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T17:14:58.431Z"
+              "WhenOpened": "2025-05-25T17:13:43.749Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -100,69 +78,36 @@
               "RelativeDocumentMoniker": "Service\\OrderService.cs",
               "ToolTip": "E:\\customOrder\\customOrder-backend\\Service\\OrderService.cs",
               "RelativeToolTip": "Service\\OrderService.cs",
-              "ViewState": "AgIAADsAAAAAZWZmZmYWwK4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAmpmZmZkrwL4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T17:14:22.085Z"
+              "WhenOpened": "2025-05-25T16:39:08.369Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "OrderData.cs",
-              "DocumentMoniker": "E:\\customOrder\\customOrder-backend\\DTO\\OrderData.cs",
-              "RelativeDocumentMoniker": "DTO\\OrderData.cs",
-              "ToolTip": "E:\\customOrder\\customOrder-backend\\DTO\\OrderData.cs",
-              "RelativeToolTip": "DTO\\OrderData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T17:11:54.283Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SubscriptionsController.cs",
-              "DocumentMoniker": "E:\\customOrder\\customOrder-backend\\Controllers\\SubscriptionsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SubscriptionsController.cs",
-              "ToolTip": "E:\\customOrder\\customOrder-backend\\Controllers\\SubscriptionsController.cs",
-              "RelativeToolTip": "Controllers\\SubscriptionsController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T17:05:32.522Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "SubscriptionService.cs",
               "DocumentMoniker": "E:\\customOrder\\customOrder-backend\\Service\\SubscriptionService.cs",
               "RelativeDocumentMoniker": "Service\\SubscriptionService.cs",
               "ToolTip": "E:\\customOrder\\customOrder-backend\\Service\\SubscriptionService.cs",
               "RelativeToolTip": "Service\\SubscriptionService.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAiwDMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T17:01:02.958Z"
+              "WhenOpened": "2025-05-25T16:39:06.329Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ISubscriptionService.cs",
-              "DocumentMoniker": "E:\\customOrder\\customOrder-backend\\Service\\ISubscriptionService.cs",
-              "RelativeDocumentMoniker": "Service\\ISubscriptionService.cs",
-              "ToolTip": "E:\\customOrder\\customOrder-backend\\Service\\ISubscriptionService.cs",
-              "RelativeToolTip": "Service\\ISubscriptionService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "E:\\customOrder\\customOrder-backend\\Service\\IOrderService.cs",
+              "RelativeDocumentMoniker": "Service\\IOrderService.cs",
+              "ToolTip": "E:\\customOrder\\customOrder-backend\\Service\\IOrderService.cs",
+              "RelativeToolTip": "Service\\IOrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T17:00:54.142Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "20250523163821_UpdateOrderModel.cs",
-              "DocumentMoniker": "E:\\customOrder\\customOrder-backend\\Data\\Migrations\\20250523163821_UpdateOrderModel.cs",
-              "RelativeDocumentMoniker": "Data\\Migrations\\20250523163821_UpdateOrderModel.cs",
-              "ToolTip": "E:\\customOrder\\customOrder-backend\\Data\\Migrations\\20250523163821_UpdateOrderModel.cs",
-              "RelativeToolTip": "Data\\Migrations\\20250523163821_UpdateOrderModel.cs",
-              "ViewState": "AgIAAMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T16:38:22.504Z"
+              "WhenOpened": "2025-05-25T16:36:12.793Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -172,71 +117,36 @@
               "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
               "ToolTip": "E:\\customOrder\\customOrder-backend\\Controllers\\OrderController.cs",
               "RelativeToolTip": "Controllers\\OrderController.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAQwIEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T16:32:39.259Z"
+              "WhenOpened": "2025-05-25T16:10:20.093Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ProductTypeController.cs",
-              "DocumentMoniker": "E:\\customOrder\\customOrder-backend\\Controllers\\ProductTypeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProductTypeController.cs",
-              "ToolTip": "E:\\customOrder\\customOrder-backend\\Controllers\\ProductTypeController.cs",
-              "RelativeToolTip": "Controllers\\ProductTypeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T16:32:35.474Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Order.cs",
-              "DocumentMoniker": "E:\\customOrder\\customOrder-backend\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "Models\\Order.cs",
-              "ToolTip": "E:\\customOrder\\customOrder-backend\\Models\\Order.cs",
-              "RelativeToolTip": "Models\\Order.cs",
-              "ViewState": "AgIAABsAAAAAmpmZmZkrwCYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T16:28:54.139Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\customOrder\\customOrder-backend\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "E:\\customOrder\\customOrder-backend\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-23T03:42:11.24Z",
+              "WhenOpened": "2025-05-25T13:55:37.773Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\customOrder\\customOrder-backend\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "E:\\customOrder\\customOrder-backend\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAgwDwAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAMDMzMzPjvyYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T01:45:55.443Z",
+              "WhenOpened": "2025-05-25T13:53:15.454Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ShapeWithDesign.cs",
-              "DocumentMoniker": "E:\\customOrder\\customOrder-backend\\Controllers\\ShapeWithDesign.cs",
-              "RelativeDocumentMoniker": "Controllers\\ShapeWithDesign.cs",
-              "ToolTip": "E:\\customOrder\\customOrder-backend\\Controllers\\ShapeWithDesign.cs",
-              "RelativeToolTip": "Controllers\\ShapeWithDesign.cs",
-              "ViewState": "AgIAAIUAAAAYMzMzMzMvwIwAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T15:31:57.062Z"
             }
           ]
         }

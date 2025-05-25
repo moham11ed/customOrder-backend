@@ -171,5 +171,23 @@ namespace customOrder.Service
                 return Enumerable.Empty<Order>();
             }
         }
+        public async Task<string> GetOrderStatusAsync(int orderId)
+        {
+            try
+            {
+                var order = await _context.Orders
+                    .AsNoTracking()
+                    .Where(o => o.Id == orderId)
+                    .Select(o => o.Status)
+                    .FirstOrDefaultAsync();
+
+                return order;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error retrieving status for order {OrderId}", orderId);
+                return null;
+            }
+        }
     }
 }

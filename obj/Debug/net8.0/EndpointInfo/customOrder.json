@@ -582,18 +582,19 @@
         }
       }
     },
-    "/api/Orders/by-email/{email}": {
+    "/api/Orders/{id}/status": {
       "get": {
         "tags": [
           "Orders"
         ],
         "parameters": [
           {
-            "name": "email",
+            "name": "id",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int32"
             }
           }
         ],
@@ -602,9 +603,7 @@
             "description": "OK"
           }
         }
-      }
-    },
-    "/api/Orders/{id}/status": {
+      },
       "patch": {
         "tags": [
           "Orders"
@@ -639,6 +638,28 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Orders/by-email/{email}": {
+      "get": {
+        "tags": [
+          "Orders"
+        ],
+        "parameters": [
+          {
+            "name": "email",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"

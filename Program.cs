@@ -22,17 +22,21 @@ namespace customOrder
             builder.Services.AddScoped<IOrderService, OrderService>();
 
             // Add CORS policy
+
+            var allawOrigin = builder.Configuration.GetValue<string>("AllowedOrigin")!.Split(",");
+
             builder.Services.AddCors(options =>
             {
-                options.AddPolicy("AllowAngularApp",
-                    policy =>
-                    {
-                        policy.WithOrigins("http://localhost:4200") // أو أي عنوان آخر لتطبيقك
-                              .AllowAnyMethod()
-                              .AllowAnyHeader()
-                              .AllowCredentials();
-                    });
+                options.AddDefaultPolicy(policy =>
+                {
+                    policy.WithOrigins(allawOrigin).AllowAnyHeader().AllowAnyMethod();
+
+                });
+
+
             });
+
+            
 
             // Add Swagger/OpenAPI
             builder.Services.AddEndpointsApiExplorer();
@@ -50,7 +54,7 @@ namespace customOrder
             app.UseHttpsRedirection();
 
             // Enable CORS middleware - يجب أن يكون قبل UseAuthorization و MapControllers
-            app.UseCors("AllowAngularApp");
+            app.UseCors();
 
             app.UseAuthorization();
             app.MapControllers();
