@@ -9,14 +9,8 @@ namespace customOrder.Models
         [Key]
         public int Id { get; set; }
 
-        [ForeignKey("BottleDesign")]
-        public int ShapeId { get; set; }
-        public BottleDesign BottleDesign { get; set; }
-
-        [ForeignKey("LogoDesign")]
-        public int DesignId { get; set; }
-        public LogoDesign LogoDesign { get; set; }
-
+        public int ShapeId { get; set; }  
+        public int DesignId { get; set; } 
         public string ImageUrl { get; set; }
     }
 }

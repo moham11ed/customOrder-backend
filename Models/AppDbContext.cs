@@ -29,19 +29,7 @@ namespace customOrder.Models
         {
             base.OnModelCreating(modelBuilder);
 
-            // Configure ShapeWithDesign relationships
-            modelBuilder.Entity<ShapeWithDesign>()
-                .HasOne(s => s.BottleDesign)
-                .WithMany()
-                .HasForeignKey(s => s.ShapeId)
-                .OnDelete(DeleteBehavior.Restrict);
-
-            modelBuilder.Entity<ShapeWithDesign>()
-                .HasOne(s => s.LogoDesign)
-                .WithMany()
-                .HasForeignKey(s => s.DesignId)
-                .OnDelete(DeleteBehavior.Restrict);
-
+            
             
         }
     }

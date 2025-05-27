@@ -1,0 +1,89 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\customOrder\\customOrder-backend\\wwwroot\\Uploads\\372646f5-6922-4ff4-902f-ee7fdaa8e09c_1111.PNG",
+      "PackagePath": "staticwebassets\\Uploads\\372646f5-6922-4ff4-902f-ee7fdaa8e09c_1111.PNG"
+    },
+    {
+      "Id": "E:\\customOrder\\customOrder-backend\\wwwroot\\Uploads\\3e7d9065-bb9c-4316-9010-c75e322df77a_80c2f2b57018f83f0d4a006975aeb462-removebg-preview.png",
+      "PackagePath": "staticwebassets\\Uploads\\3e7d9065-bb9c-4316-9010-c75e322df77a_80c2f2b57018f83f0d4a006975aeb462-removebg-preview.png"
+    },
+    {
+      "Id": "E:\\customOrder\\customOrder-backend\\wwwroot\\Uploads\\3eeb017c-c31d-47d5-b011-9ae607471b74_1111.PNG",
+      "PackagePath": "staticwebassets\\Uploads\\3eeb017c-c31d-47d5-b011-9ae607471b74_1111.PNG"
+    },
+    {
+      "Id": "E:\\customOrder\\customOrder-backend\\wwwroot\\Uploads\\44c635c2-6ba0-4817-b487-31a805b57ba0_1111.PNG",
+      "PackagePath": "staticwebassets\\Uploads\\44c635c2-6ba0-4817-b487-31a805b57ba0_1111.PNG"
+    },
+    {
+      "Id": "E:\\customOrder\\customOrder-backend\\wwwroot\\Uploads\\487933c9-32d0-42a3-acda-e29b8d2568fe_1111.PNG",
+      "PackagePath": "staticwebassets\\Uploads\\487933c9-32d0-42a3-acda-e29b8d2568fe_1111.PNG"
+    },
+    {
+      "Id": "E:\\customOrder\\customOrder-backend\\wwwroot\\Uploads\\4d6faafa-28d1-4ebc-9f2f-e97a64daef72_bf156a7f-9535-4d40-8ddc-16cafe490235.jfif",
+      "PackagePath": "staticwebassets\\Uploads\\4d6faafa-28d1-4ebc-9f2f-e97a64daef72_bf156a7f-9535-4d40-8ddc-16cafe490235.jfif"
+    },
+    {
+      "Id": "E:\\customOrder\\customOrder-backend\\wwwroot\\Uploads\\5b9225d2-5ac6-4234-8387-f0abb65c5198_image.png",
+      "PackagePath": "staticwebassets\\Uploads\\5b9225d2-5ac6-4234-8387-f0abb65c5198_image.png"
+    },
+    {
+      "Id": "E:\\customOrder\\customOrder-backend\\wwwroot\\Uploads\\5d28e085-dc79-4e71-b63e-fc757753e336_image.png",
+      "PackagePath": "staticwebassets\\Uploads\\5d28e085-dc79-4e71-b63e-fc757753e336_image.png"
+    },
+    {
+      "Id": "E:\\customOrder\\customOrder-backend\\wwwroot\\Uploads\\74114ee0-aaed-4c4b-9797-eed9cfeaa58d_image.png",
+      "PackagePath": "staticwebassets\\Uploads\\74114ee0-aaed-4c4b-9797-eed9cfeaa58d_image.png"
+    },
+    {
+      "Id": "E:\\customOrder\\customOrder-backend\\wwwroot\\Uploads\\74c6e963-4eb6-4345-a9bf-1fbf4d404e84_1111.PNG",
+      "PackagePath": "staticwebassets\\Uploads\\74c6e963-4eb6-4345-a9bf-1fbf4d404e84_1111.PNG"
+    },
+    {
+      "Id": "E:\\customOrder\\customOrder-backend\\wwwroot\\Uploads\\7e3adff9-bd5d-489e-866c-6d0bcbea6dd8_photo.PNG",
+      "PackagePath": "staticwebassets\\Uploads\\7e3adff9-bd5d-489e-866c-6d0bcbea6dd8_photo.PNG"
+    },
+    {
+      "Id": "E:\\customOrder\\customOrder-backend\\wwwroot\\Uploads\\843d6839-5f9d-4657-bfc9-57615374f2b0_1111.PNG",
+      "PackagePath": "staticwebassets\\Uploads\\843d6839-5f9d-4657-bfc9-57615374f2b0_1111.PNG"
+    },
+    {
+      "Id": "E:\\customOrder\\customOrder-backend\\wwwroot\\Uploads\\88ccf477-faa4-41b8-bdb1-4be99d1ee319_1111.PNG",
+      "PackagePath": "staticwebassets\\Uploads\\88ccf477-faa4-41b8-bdb1-4be99d1ee319_1111.PNG"
+    },
+    {
+      "Id": "E:\\customOrder\\customOrder-backend\\wwwroot\\Uploads\\a6e7ba9a-04c4-4cd8-8ab8-854a28921e1c_bf156a7f-9535-4d40-8ddc-16cafe490235.jfif",
+      "PackagePath": "staticwebassets\\Uploads\\a6e7ba9a-04c4-4cd8-8ab8-854a28921e1c_bf156a7f-9535-4d40-8ddc-16cafe490235.jfif"
+    },
+    {
+      "Id": "E:\\customOrder\\customOrder-backend\\wwwroot\\Uploads\\ac6f063f-3564-4118-95a8-ab5f1b055f3e_1111.PNG",
+      "PackagePath": "staticwebassets\\Uploads\\ac6f063f-3564-4118-95a8-ab5f1b055f3e_1111.PNG"
+    },
+    {
+      "Id": "E:\\customOrder\\customOrder-backend\\wwwroot\\Uploads\\d78b7dfd-df7c-43d1-b90a-6ad16edbee60_image.png",
+      "PackagePath": "staticwebassets\\Uploads\\d78b7dfd-df7c-43d1-b90a-6ad16edbee60_image.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.customOrder.props",
+      "PackagePath": "build\\customOrder.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.customOrder.props",
+      "PackagePath": "buildMultiTargeting\\customOrder.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.customOrder.props",
+      "PackagePath": "buildTransitive\\customOrder.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.customOrder.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.customOrder.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

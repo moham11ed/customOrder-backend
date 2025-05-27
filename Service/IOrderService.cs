@@ -7,7 +7,7 @@ namespace customOrder.Service
 {
     public interface IOrderService
     {
-        Task<bool> CreateOrderAsync(OrderData orderData);
+        Task<int> CreateOrderAsync(OrderData orderData);
         Task<Order> GetOrderByIdAsync(int id);
         Task<IEnumerable<Order>> GetOrdersByEmailAsync(string email);
         Task<bool> UpdateOrderStatusAsync(int orderId, string status);

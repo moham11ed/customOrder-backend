@@ -2,16 +2,16 @@
 {
     public class OrderData
     {
-        public string ProductType { get; set; }
-        public int ProductTypeId { get; set; }
+        public string? ProductType { get; set; }
+        public int? ProductTypeId { get; set; }
         public List<SelectedOil> SelectedOils { get; set; } = new List<SelectedOil>();
         public int? ShapeId { get; set; }
-        public string ShapeImageUrl { get; set; }
+        public string? ShapeImageUrl { get; set; }
         public int? DesignId { get; set; }
-        public string DesignUrl { get; set; }
-        public string CustomImage { get; set; } // Base64 string or URL
-        public string ProductName { get; set; }
-        public int Quantity { get; set; }
+        public string? DesignUrl { get; set; }
+        public string? CustomImage { get; set; } // Base64 string or URL
+        public string? ProductName { get; set; }
+        public int? Quantity { get; set; }
         public ClientInfo ClientInfo { get; set; }
     }
 

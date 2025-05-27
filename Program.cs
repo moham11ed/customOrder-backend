@@ -1,6 +1,7 @@
 ﻿using customOrder.Models;
 using customOrder.Service;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 
 namespace customOrder
 {
@@ -50,7 +51,15 @@ namespace customOrder
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            app.UseStaticFiles(); // هذه الخدمة الأساسية لـ wwwroot
 
+            // إذا كنت تريد إعداد خاص لمجلد Uploads
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(builder.Environment.WebRootPath, "Uploads")),
+                RequestPath = "/Uploads" // هذا هو المسار الذي سيستخدم للوصول من المتصفح
+            });
             app.UseHttpsRedirection();
 
             // Enable CORS middleware - يجب أن يكون قبل UseAuthorization و MapControllers
@@ -59,6 +68,7 @@ namespace customOrder
             app.UseAuthorization();
             app.MapControllers();
 
+           
             app.Run();
         }
     }

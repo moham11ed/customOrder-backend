@@ -21,12 +21,12 @@ namespace customOrder.Service
             _logger = logger;
         }
 
-        public async Task<bool> CreateOrderAsync(OrderData orderData)
+        public async Task<int> CreateOrderAsync(OrderData orderData)
         {
             if (orderData == null)
             {
                 _logger.LogWarning("CreateOrderAsync called with null orderData");
-                return false;
+                return 0;
             }
 
             try
@@ -41,7 +41,7 @@ namespace customOrder.Service
 
                     // Customization options
                     SelectedOilsJson = JsonSerializer.Serialize(orderData.SelectedOils),
-                    ShapeId = orderData.ShapeId,
+                    ShapeId = orderData.ShapeId ,
                     ShapeImageUrl = orderData.ShapeImageUrl,
                     DesignId = orderData.DesignId,
                     DesignUrl = orderData.DesignUrl,
@@ -63,22 +63,22 @@ namespace customOrder.Service
                 await _context.SaveChangesAsync();
 
                 _logger.LogInformation("Order created successfully with ID {OrderId}", order.Id);
-                return true;
+                return order.Id;
             }
             catch (DbUpdateException ex)
             {
                 _logger.LogError(ex, "Database error while creating order");
-                return false;
+                return 0;
             }
             catch (JsonException ex)
             {
                 _logger.LogError(ex, "JSON serialization error for selected oils");
-                return false;
+                return 0;
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Unexpected error creating order");
-                return false;
+                return 0;
             }
         }
 

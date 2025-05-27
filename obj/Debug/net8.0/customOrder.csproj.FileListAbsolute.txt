@@ -517,3 +517,4 @@ E:\customOrder\customOrder-backend\obj\Debug\net8.0\refint\customOrder.dll
 E:\customOrder\customOrder-backend\obj\Debug\net8.0\customOrder.pdb
 E:\customOrder\customOrder-backend\obj\Debug\net8.0\customOrder.genruntimeconfig.cache
 E:\customOrder\customOrder-backend\obj\Debug\net8.0\ref\customOrder.dll
+E:\customOrder\customOrder-backend\bin\Debug\net8.0\customOrder.staticwebassets.runtime.json

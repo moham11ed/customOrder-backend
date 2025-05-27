@@ -147,62 +147,51 @@ namespace customOrder.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("City")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ClientEmail")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ClientName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ClientPhone")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Country")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("CustomImage")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("DesignId")
                         .HasColumnType("int");
 
                     b.Property<string>("DesignUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProductName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProductType")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ProductTypeId")
+                    b.Property<int?>("ProductTypeId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Quantity")
+                    b.Property<int?>("Quantity")
                         .HasColumnType("int");
 
                     b.Property<string>("SelectedOilsJson")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("ShapeId")
                         .HasColumnType("int");
 
                     b.Property<string>("ShapeImageUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Status")
@@ -210,7 +199,6 @@ namespace customOrder.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Street")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -272,10 +260,6 @@ namespace customOrder.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("DesignId");
-
-                    b.HasIndex("ShapeId");
-
                     b.ToTable("ShapeWithDesigns");
                 });
 
@@ -297,25 +281,6 @@ namespace customOrder.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Subscriptions");
-                });
-
-            modelBuilder.Entity("customOrder.Models.ShapeWithDesign", b =>
-                {
-                    b.HasOne("customOrder.Models.LogoDesign", "LogoDesign")
-                        .WithMany()
-                        .HasForeignKey("DesignId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("customOrder.Models.BottleDesign", "BottleDesign")
-                        .WithMany()
-                        .HasForeignKey("ShapeId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("BottleDesign");
-
-                    b.Navigation("LogoDesign");
                 });
 #pragma warning restore 612, 618
         }

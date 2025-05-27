@@ -161,6 +161,60 @@
         }
       }
     },
+    "/api/Images/upload": {
+      "post": {
+        "tags": [
+          "Images"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "file": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Images/{fileName}": {
+      "get": {
+        "tags": [
+          "Images"
+        ],
+        "parameters": [
+          {
+            "name": "fileName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/LogoDesigns": {
       "get": {
         "tags": [
@@ -1479,7 +1533,8 @@
           },
           "productTypeId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "selectedOils": {
             "type": "array",
@@ -1516,7 +1571,8 @@
           },
           "quantity": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "clientInfo": {
             "$ref": "#/components/schemas/ClientInfo"
@@ -1577,15 +1633,9 @@
             "type": "integer",
             "format": "int32"
           },
-          "bottleDesign": {
-            "$ref": "#/components/schemas/BottleDesign"
-          },
           "designId": {
             "type": "integer",
             "format": "int32"
-          },
-          "logoDesign": {
-            "$ref": "#/components/schemas/LogoDesign"
           },
           "imageUrl": {
             "type": "string",

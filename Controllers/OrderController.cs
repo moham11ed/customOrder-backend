@@ -39,16 +39,21 @@ namespace customOrder.Controllers
                     return BadRequest("Email is required");
                 }
 
-                var success = await _orderService.CreateOrderAsync(orderData);
+                var orderId = await _orderService.CreateOrderAsync(orderData);
 
-                return success
-                    ? Ok(new { Success = true, Message = "Order created successfully" })
-                    : StatusCode(500, "Failed to create order");
-            }
-            catch (ValidationException ex)
-            {
-                _logger.LogWarning(ex, "Validation error in CreateOrder");
-                return BadRequest(ex.Message);
+                if (orderId > 0)
+                {
+                    return Ok(new
+                    {
+                        id = orderId,
+                        success = true,
+                        message = "Order created successfully"
+                    });
+                }
+                else
+                {
+                    return StatusCode(500, "Failed to create order");
+                }
             }
             catch (Exception ex)
             {

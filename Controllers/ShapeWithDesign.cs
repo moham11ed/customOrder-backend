@@ -22,20 +22,14 @@ namespace customOrder.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ShapeWithDesign>>> GetShapeWithDesigns()
         {
-            return await _context.ShapeWithDesigns
-                .Include(s => s.BottleDesign)
-                .Include(s => s.LogoDesign)
-                .ToListAsync();
+            return await _context.ShapeWithDesigns.ToListAsync();
         }
 
         // GET: api/ShapeWithDesigns/5
         [HttpGet("{id}")]
         public async Task<ActionResult<ShapeWithDesign>> GetShapeWithDesign(int id)
         {
-            var shapeWithDesign = await _context.ShapeWithDesigns
-                .Include(s => s.BottleDesign)
-                .Include(s => s.LogoDesign)
-                .FirstOrDefaultAsync(s => s.Id == id);
+            var shapeWithDesign = await _context.ShapeWithDesigns.FindAsync(id);
 
             if (shapeWithDesign == null)
             {
@@ -49,31 +43,16 @@ namespace customOrder.Controllers
         [HttpPost]
         public async Task<ActionResult<ShapeWithDesign>> CreateShapeWithDesign(ShapeWithDesign shapeWithDesign)
         {
-            // Validate the model
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            // Verify that the referenced designs exist
-            var bottleDesignExists = await _context.BottleDesigns.AnyAsync(b => b.Id == shapeWithDesign.ShapeId);
-            var logoDesignExists = await _context.LogoDesigns.AnyAsync(l => l.Id == shapeWithDesign.DesignId);
-
-            if (!bottleDesignExists || !logoDesignExists)
-            {
-                return BadRequest("One or more referenced designs do not exist");
-            }
-
+            // Removed the foreign key existence checks since these are no longer FKs
             _context.ShapeWithDesigns.Add(shapeWithDesign);
             await _context.SaveChangesAsync();
 
-            // Return the created entity with its navigation properties loaded
-            var result = await _context.ShapeWithDesigns
-                .Include(s => s.BottleDesign)
-                .Include(s => s.LogoDesign)
-                .FirstOrDefaultAsync(s => s.Id == shapeWithDesign.Id);
-
-            return CreatedAtAction(nameof(GetShapeWithDesign), new { id = shapeWithDesign.Id }, result);
+            return CreatedAtAction(nameof(GetShapeWithDesign), new { id = shapeWithDesign.Id }, shapeWithDesign);
         }
 
         // PUT: api/ShapeWithDesigns/5
@@ -90,15 +69,7 @@ namespace customOrder.Controllers
                 return BadRequest(ModelState);
             }
 
-            // Verify that the referenced designs exist
-            var bottleDesignExists = await _context.BottleDesigns.AnyAsync(b => b.Id == shapeWithDesign.ShapeId);
-            var logoDesignExists = await _context.LogoDesigns.AnyAsync(l => l.Id == shapeWithDesign.DesignId);
-
-            if (!bottleDesignExists || !logoDesignExists)
-            {
-                return BadRequest("One or more referenced designs do not exist");
-            }
-
+            // Removed the foreign key existence checks
             _context.Entry(shapeWithDesign).State = EntityState.Modified;
 
             try
@@ -141,23 +112,12 @@ namespace customOrder.Controllers
         [Produces("application/json")]
         public async Task<ActionResult<IEnumerable<ShapeWithDesign>>> GetByShapeAndDesign(int shapeId, int designId)
         {
-            var shapeExists = await _context.BottleDesigns.AnyAsync(b => b.Id == shapeId);
-            var designExists = await _context.LogoDesigns.AnyAsync(l => l.Id == designId);
-
-            if (!shapeExists || !designExists)
-            {
-                return NotFound("Shape or design not found");
-            }
-
             var result = await _context.ShapeWithDesigns
                 .Where(s => s.ShapeId == shapeId && s.DesignId == designId)
-                .Include(s => s.BottleDesign)
-                .Include(s => s.LogoDesign)
                 .ToListAsync();
 
             return Ok(result);
         }
-
 
         private bool ShapeWithDesignExists(int id)
         {
