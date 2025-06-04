@@ -25,13 +25,21 @@ namespace customOrder.Models
 
         public DbSet<ShapeWithDesign> ShapeWithDesigns { get; set; }
 
+        public DbSet<Translation> Translations { get; set; }
+        public DbSet<TranslationItem> TranslationItems { get; set; }
+
+        
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
-
-            
-            
+            modelBuilder.Entity<Translation>()
+                .HasMany(t => t.Items)
+                .WithOne(i => i.Translation)
+                .HasForeignKey(i => i.TranslationId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
+
+        
     }
 }
 

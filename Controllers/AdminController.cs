@@ -1,12 +1,14 @@
-﻿using customOrder.DTO;
+﻿using Microsoft.AspNetCore.Mvc;
+using customOrder.DTO;
 using customOrder.Models;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace customOrder.Controllers
 {
-    [ApiController]
     [Route("api/[controller]")]
+    [ApiController]
     public class AdminController : ControllerBase
     {
         private readonly AppDbContext _context;
@@ -16,16 +18,75 @@ namespace customOrder.Controllers
             _context = context;
         }
 
-        [HttpPost("login")]
-        public IActionResult Login(AdminLoginDto login)
+        // POST: api/Admin/Login
+        [HttpPost("Login")]
+        public async Task<IActionResult> Login([FromBody] AdminLoginDto loginDto)
         {
-            var admin = _context.Admins.SingleOrDefault(a => a.Username == login.Username);
-            if (admin == null || admin.PasswordHash != login.Password) // NOTE: Use real hashing in production
+            
+            if (string.IsNullOrEmpty(loginDto.Username) || string.IsNullOrEmpty(loginDto.Password))
+                return BadRequest("Username and password are required.");
+
+            var admin = await _context.Admins
+                .FirstOrDefaultAsync(a => a.Username == loginDto.Username &&
+                                          a.PasswordHash == loginDto.Password);
+
+            if (admin == null)
+                return Unauthorized("Invalid credentials");
+
+            
+            return Ok(new { Message = "Login successful" });
+        }
+
+        // POST: api/Admin/Register
+        [HttpPost("Register")]
+        public async Task<IActionResult> Register([FromBody] AdminLoginDto registerDto)
+        {
+            
+            if (string.IsNullOrEmpty(registerDto.Username) || string.IsNullOrEmpty(registerDto.Password))
+                return BadRequest("Username and password are required.");
+
+            
+            if (await _context.Admins.AnyAsync(a => a.Username == registerDto.Username))
+                return BadRequest("Username already exists");
+
+            
+            var admin = new Admin
             {
-                return Unauthorized();
+                Username = registerDto.Username,
+                PasswordHash = registerDto.Password 
+            };
+
+            _context.Admins.Add(admin);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { Message = "Admin created successfully" });
+        }
+
+        // GET: api/Admin
+        [HttpGet]
+        public async Task<IActionResult> GetAllAdmins()
+        {
+            var admins = await _context.Admins
+                .Select(a => new { a.Id, a.Username })
+                .ToListAsync();
+
+            return Ok(admins);
+        }
+
+        // DELETE: api/Admin/{id}
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteAdmin(int id)
+        {
+            var admin = await _context.Admins.FindAsync(id);
+            if (admin == null)
+            {
+                return NotFound();
             }
 
-            return Ok(new { message = "Login successful" });
+            _context.Admins.Remove(admin);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { Message = "Admin deleted successfully" });
         }
     }
 }

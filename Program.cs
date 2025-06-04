@@ -22,6 +22,8 @@ namespace customOrder
             builder.Services.AddScoped<ISubscriptionService, SubscriptionService>();
             builder.Services.AddScoped<IOrderService, OrderService>();
 
+            builder.Services.AddScoped<IEmailService, EmailService>();
+
             // Add CORS policy
 
             var allawOrigin = builder.Configuration.GetValue<string>("AllowedOrigin")!.Split(",");

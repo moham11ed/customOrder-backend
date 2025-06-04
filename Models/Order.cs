@@ -32,6 +32,8 @@ namespace customOrder.Models
         public string? City { get; set; }
         public string? Street { get; set; }
 
+        public string? ZIP { get; set; }
+
         // Metadata
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public string Status { get; set; } = "Received";

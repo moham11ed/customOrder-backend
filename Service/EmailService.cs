@@ -14,7 +14,56 @@ namespace customOrder.Service
 
         public async Task SendOrderConfirmationAsync(string toEmail, int orderId)
         {
-            var smtpClient = new SmtpClient(_config["EmailSettings:SmtpServer"])
+            await SendEmailAsync(toEmail,
+                $"Order Confirmation - #{orderId}",
+                $"Your order #{orderId} has been successfully received.");
+        }
+
+        public async Task SendOrderStatusUpdateAsync(string toEmail, int orderId, string newStatus)
+        {
+            await SendEmailAsync(toEmail,
+                $"Order Status Update - #{orderId}",
+                $"The status of your order #{orderId} has been updated to: {newStatus}.");
+        }
+
+        public async Task SendBulkEmailAsync(List<string> toEmails, string subject, string body)
+        {
+            using var smtpClient = CreateSmtpClient();
+
+            foreach (var email in toEmails)
+            {
+                var mailMessage = new MailMessage
+                {
+                    From = new MailAddress(_config["EmailSettings:SmtpUser"]),
+                    Subject = subject,
+                    Body = body,
+                    IsBodyHtml = false
+                };
+
+                mailMessage.To.Add(email);
+                await smtpClient.SendMailAsync(mailMessage);
+            }
+        }
+
+        private async Task SendEmailAsync(string toEmail, string subject, string body)
+        {
+            using var smtpClient = CreateSmtpClient();
+
+            var mailMessage = new MailMessage
+            {
+                From = new MailAddress(_config["EmailSettings:SmtpUser"]),
+                Subject = subject,
+                Body = body,
+                IsBodyHtml = false
+            };
+
+            mailMessage.To.Add(toEmail);
+            await smtpClient.SendMailAsync(mailMessage);
+        }
+
+        private SmtpClient CreateSmtpClient()
+        {
+            return new SmtpClient(_config["EmailSettings:SmtpServer"])
             {
                 Port = int.Parse(_config["EmailSettings:SmtpPort"]),
                 Credentials = new NetworkCredential(
@@ -22,17 +71,6 @@ namespace customOrder.Service
                     _config["EmailSettings:SmtpPass"]),
                 EnableSsl = true
             };
-
-            var mailMessage = new MailMessage
-            {
-                From = new MailAddress(_config["EmailSettings:SmtpUser"]),
-                Subject = $"Order Confirmation - #{orderId}",
-                Body = $"Your order #{orderId} has been successfully received.",
-                IsBodyHtml = false
-            };
-
-            mailMessage.To.Add(toEmail);
-            await smtpClient.SendMailAsync(mailMessage);
         }
     }
 }

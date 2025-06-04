@@ -54,6 +54,7 @@ namespace customOrder.Service
                     Country = orderData.ClientInfo?.Country,
                     City = orderData.ClientInfo?.City,
                     Street = orderData.ClientInfo?.Street,
+                    ZIP = orderData.ClientInfo?.ZIP,
 
                     // Metadata
                     Status = "Received"
