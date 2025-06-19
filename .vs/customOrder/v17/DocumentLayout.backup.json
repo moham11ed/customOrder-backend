@@ -1,37 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\customOrder\\customOrder-backend\\",
+  "WorkspaceRootPath": "E:\\customOrder\\New folder\\customOrder-backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\customorder-backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\customOrder\\New folder\\customOrder-backend\\Migrations\\20250619132210_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250619132210_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\new folder\\customorder-backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\customorder-backend\\controllers\\translationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\new folder\\customorder-backend\\controllers\\translationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|solutionrelative:controllers\\translationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\customorder-backend\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\new folder\\customorder-backend\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\customorder-backend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\new folder\\customorder-backend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\customorder-backend\\data\\migrations\\20250530023030_addtranslationtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|solutionrelative:data\\migrations\\20250530023030_addtranslationtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\customorder-backend\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\new folder\\customorder-backend\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|solutionrelative:models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\customorder-backend\\dto\\translationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\new folder\\customorder-backend\\dto\\translationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|solutionrelative:dto\\translationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\customorder-backend\\models\\translationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|e:\\customorder\\new folder\\customorder-backend\\models\\translationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17F2E42D-4046-4568-897C-2E178FF060D0}|customOrder.csproj|solutionrelative:models\\translationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -47,23 +47,36 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "20250619132210_init.cs",
+              "DocumentMoniker": "E:\\customOrder\\New folder\\customOrder-backend\\Migrations\\20250619132210_init.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250619132210_init.cs",
+              "ToolTip": "E:\\customOrder\\New folder\\customOrder-backend\\Migrations\\20250619132210_init.cs",
+              "RelativeToolTip": "Migrations\\20250619132210_init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T13:22:10.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\customOrder\\customOrder-backend\\appsettings.json",
+              "DocumentMoniker": "E:\\customOrder\\New folder\\customOrder-backend\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "E:\\customOrder\\customOrder-backend\\appsettings.json",
+              "ToolTip": "E:\\customOrder\\New folder\\customOrder-backend\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-06-04T05:24:56.892Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "E:\\customOrder\\customOrder-backend\\Controllers\\WeatherForecastController.cs",
+              "DocumentMoniker": "E:\\customOrder\\New folder\\customOrder-backend\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
-              "ToolTip": "E:\\customOrder\\customOrder-backend\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "E:\\customOrder\\New folder\\customOrder-backend\\Controllers\\WeatherForecastController.cs",
               "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -71,11 +84,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AdminController.cs",
-              "DocumentMoniker": "E:\\customOrder\\customOrder-backend\\Controllers\\AdminController.cs",
+              "DocumentMoniker": "E:\\customOrder\\New folder\\customOrder-backend\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
-              "ToolTip": "E:\\customOrder\\customOrder-backend\\Controllers\\AdminController.cs",
+              "ToolTip": "E:\\customOrder\\New folder\\customOrder-backend\\Controllers\\AdminController.cs",
               "RelativeToolTip": "Controllers\\AdminController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -83,23 +96,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "20250530023030_addtranslationtable.cs",
-              "DocumentMoniker": "E:\\customOrder\\customOrder-backend\\Data\\Migrations\\20250530023030_addtranslationtable.cs",
-              "RelativeDocumentMoniker": "Data\\Migrations\\20250530023030_addtranslationtable.cs",
-              "ToolTip": "E:\\customOrder\\customOrder-backend\\Data\\Migrations\\20250530023030_addtranslationtable.cs",
-              "RelativeToolTip": "Data\\Migrations\\20250530023030_addtranslationtable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T02:30:30.439Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
               "Title": "TranslationDto.cs",
-              "DocumentMoniker": "E:\\customOrder\\customOrder-backend\\DTO\\TranslationDto.cs",
+              "DocumentMoniker": "E:\\customOrder\\New folder\\customOrder-backend\\DTO\\TranslationDto.cs",
               "RelativeDocumentMoniker": "DTO\\TranslationDto.cs",
-              "ToolTip": "E:\\customOrder\\customOrder-backend\\DTO\\TranslationDto.cs",
+              "ToolTip": "E:\\customOrder\\New folder\\customOrder-backend\\DTO\\TranslationDto.cs",
               "RelativeToolTip": "DTO\\TranslationDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -107,11 +108,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "TranslationsController.cs",
-              "DocumentMoniker": "E:\\customOrder\\customOrder-backend\\Controllers\\TranslationsController.cs",
+              "DocumentMoniker": "E:\\customOrder\\New folder\\customOrder-backend\\Controllers\\TranslationsController.cs",
               "RelativeDocumentMoniker": "Controllers\\TranslationsController.cs",
-              "ToolTip": "E:\\customOrder\\customOrder-backend\\Controllers\\TranslationsController.cs",
+              "ToolTip": "E:\\customOrder\\New folder\\customOrder-backend\\Controllers\\TranslationsController.cs",
               "RelativeToolTip": "Controllers\\TranslationsController.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAwwDQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -121,9 +122,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "AppDbContext.cs",
-              "DocumentMoniker": "E:\\customOrder\\customOrder-backend\\Models\\AppDbContext.cs",
+              "DocumentMoniker": "E:\\customOrder\\New folder\\customOrder-backend\\Models\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Models\\AppDbContext.cs",
-              "ToolTip": "E:\\customOrder\\customOrder-backend\\Models\\AppDbContext.cs",
+              "ToolTip": "E:\\customOrder\\New folder\\customOrder-backend\\Models\\AppDbContext.cs",
               "RelativeToolTip": "Models\\AppDbContext.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAswDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -133,9 +134,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "TranslationDto.cs",
-              "DocumentMoniker": "E:\\customOrder\\customOrder-backend\\Models\\TranslationDto.cs",
+              "DocumentMoniker": "E:\\customOrder\\New folder\\customOrder-backend\\Models\\TranslationDto.cs",
               "RelativeDocumentMoniker": "Models\\TranslationDto.cs",
-              "ToolTip": "E:\\customOrder\\customOrder-backend\\Models\\TranslationDto.cs",
+              "ToolTip": "E:\\customOrder\\New folder\\customOrder-backend\\Models\\TranslationDto.cs",
               "RelativeToolTip": "Models\\TranslationDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

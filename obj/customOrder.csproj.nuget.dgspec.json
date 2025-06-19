@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\customOrder\\customOrder-backend\\customOrder.csproj": {}
+    "E:\\customOrder\\New folder\\customOrder-backend\\customOrder.csproj": {}
   },
   "projects": {
-    "E:\\customOrder\\customOrder-backend\\customOrder.csproj": {
+    "E:\\customOrder\\New folder\\customOrder-backend\\customOrder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\customOrder\\customOrder-backend\\customOrder.csproj",
+        "projectUniqueName": "E:\\customOrder\\New folder\\customOrder-backend\\customOrder.csproj",
         "projectName": "customOrder",
-        "projectPath": "E:\\customOrder\\customOrder-backend\\customOrder.csproj",
+        "projectPath": "E:\\customOrder\\New folder\\customOrder-backend\\customOrder.csproj",
         "packagesPath": "C:\\Users\\saied\\.nuget\\packages\\",
-        "outputPath": "E:\\customOrder\\customOrder-backend\\obj\\",
+        "outputPath": "E:\\customOrder\\New folder\\customOrder-backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

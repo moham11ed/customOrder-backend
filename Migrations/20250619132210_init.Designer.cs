@@ -9,11 +9,11 @@ using customOrder.Models;
 
 #nullable disable
 
-namespace customOrder.Data.Migrations
+namespace customOrder.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250523172535_UpdateOrderModel2")]
-    partial class UpdateOrderModel2
+    [Migration("20250619132210_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -150,62 +150,51 @@ namespace customOrder.Data.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("City")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ClientEmail")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ClientName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ClientPhone")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Country")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("CustomImage")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("DesignId")
                         .HasColumnType("int");
 
                     b.Property<string>("DesignUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProductName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProductType")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ProductTypeId")
+                    b.Property<int?>("ProductTypeId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Quantity")
+                    b.Property<int?>("Quantity")
                         .HasColumnType("int");
 
                     b.Property<string>("SelectedOilsJson")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("ShapeId")
                         .HasColumnType("int");
 
                     b.Property<string>("ShapeImageUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Status")
@@ -213,7 +202,9 @@ namespace customOrder.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Street")
-                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ZIP")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -275,10 +266,6 @@ namespace customOrder.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("DesignId");
-
-                    b.HasIndex("ShapeId");
-
                     b.ToTable("ShapeWithDesigns");
                 });
 
@@ -302,23 +289,63 @@ namespace customOrder.Data.Migrations
                     b.ToTable("Subscriptions");
                 });
 
-            modelBuilder.Entity("customOrder.Models.ShapeWithDesign", b =>
+            modelBuilder.Entity("customOrder.Models.Translation", b =>
                 {
-                    b.HasOne("customOrder.Models.LogoDesign", "LogoDesign")
-                        .WithMany()
-                        .HasForeignKey("DesignId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Key")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Translations");
+                });
+
+            modelBuilder.Entity("customOrder.Models.TranslationItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("LanguageCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TranslationId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Value")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TranslationId");
+
+                    b.ToTable("TranslationItems");
+                });
+
+            modelBuilder.Entity("customOrder.Models.TranslationItem", b =>
+                {
+                    b.HasOne("customOrder.Models.Translation", "Translation")
+                        .WithMany("Items")
+                        .HasForeignKey("TranslationId")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("customOrder.Models.BottleDesign", "BottleDesign")
-                        .WithMany()
-                        .HasForeignKey("ShapeId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                    b.Navigation("Translation");
+                });
 
-                    b.Navigation("BottleDesign");
-
-                    b.Navigation("LogoDesign");
+            modelBuilder.Entity("customOrder.Models.Translation", b =>
+                {
+                    b.Navigation("Items");
                 });
 #pragma warning restore 612, 618
         }
